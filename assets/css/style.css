@@ -1,0 +1,71 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html {
+  height: 100vh;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.header {
+  text-align: center;
+  grid-area: header;
+  background-color: cornflowerblue;
+  color: white;
+}
+.main {
+  grid-area: main;
+  width: 80vw;
+}
+.siderbar {
+  display: flex;
+  grid-area: siderbar;
+  width: 20vw;
+  height: 92vh;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 10%;
+  background-color: aliceblue;
+  color: cornflowerblue;
+}
+.footer {
+  grid-area: footer;
+  text-align: center;
+  background-color: cornflowerblue;
+  color: white;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "siderbar main"
+    "footer footer";
+  height: 100vh;
+}
+/* container*/
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.cards {
+  display: flex;
+  margin: 1rem;
+  background-color: white;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 18rem;
+}
+.cards img {
+  width: 9rem;
+}
+.img {
+  padding-left: 8rem;
+}
+button {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: cornflowerblue;
+  border: solid 1px white;
+  color: white;
+}
